@@ -4,6 +4,10 @@
    License: none (public domain)
 */
 
+:root{
+	font-size: 62.5%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +57,169 @@ table {
     box-sizing: border-box;
 }
 
+@tabletBreakpoint: 1200px;
+@mobileBreakpoint: 750px;
+
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+h1{
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 5rem;
+	@media(max-width: @tabletBreakpoint) {
+		font-size: 3rem;
+		line-height: 3rem;
+		text-align: center;
+	}			
+}
+
+h2{
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 4rem;
+	@media(max-width: @tabletBreakpoint) {
+	}			
+}
+
+p{
+	font-size: 1.6rem;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	background-color:#333;
+	min-height: 50%;
+}
+
+.menuList, .topBar{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.topBar{
+	justify-content: space-evenly;
+	min-height: 50%;
+	border-bottom: 1px solid lightgray;
+	@media(max-width: @tabletBreakpoint) {
+		border: 0;
+	  }		
+}
+
+.menuList{
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	max-width: 700px;
+	
+	@media(max-width: @tabletBreakpoint) {
+		flex-direction: column;
+	  }
+}
+
+nav a {
+	color: gray;
+	text-decoration: none;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 2rem;
+	color: whitesmoke;
+
+	@media(max-width: @tabletBreakpoint) {
+		//display: none;
+	  }	
+
+	@media(max-width: @mobileBreakpoint) {
+	display: none;
+	}	
+}
+
+button{
+	font-size: 1rem;
+	font-weight: bold;
+	background-color:lightcoral;
+	padding: 1em;
+	border-color: #333;
+	border-radius: 2px;
+	
+	@media(max-width: @tabletBreakpoint) {
+		margin: 2em;
+	  }	
+
+}
+
+.intro, .rightBox, .leftBox, .skills, .sectionTitle, .skillsDetails{
+	display: flex;
+	@media(max-width: @tabletBreakpoint) {
+		flex-direction: column;
+		width: 100%;
+	  }	
+}
+
+.skills{
+	background-color: antiquewhite;
+}
+
+.rightBox, .leftBox{
+	height: 80vh;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+	@media(max-width: @tabletBreakpoint) {
+		width: 100%;
+		height: 30vh;
+	  }	
+
+	@media(max-width: @mobileBreakpoint) {
+	//display: none;
+	}	
+}
+
+.profilePhoto{
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	bottom: 10px solid red;
+	background-image: url(../img/Profile.png);
+	background-size: cover;
+}
+
+.sectionTitle{
+	width: 40%;
+	justify-content: center;
+	color: #333;
+	padding-top: 2rem;
+	background-color: antiquewhite;
+
+	@media(max-width: @tabletBreakpoint) {
+		width: 100%;
+		padding: 2rem;
+	  }	
+
+	@media(max-width: @mobileBreakpoint) {
+	//display: none;
+	}	
+}
+
+.skillsDetails{
+	width: 60%;
+	justify-content: flex-start;
+	color: #333;
+	padding-top: 2rem;
+	background-color: antiquewhite;
+
+	@media(max-width: @tabletBreakpoint) {
+		width: 100%;
+		padding: 2rem;
+	  }	
+
+	@media(max-width: @mobileBreakpoint) {
+	//display: none;
+	}	
+}
+
 
