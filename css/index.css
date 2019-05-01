@@ -154,20 +154,45 @@ h2 {
   font-weight: bold;
   line-height: 4rem;
 }
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
 h3 {
   font-size: 3rem;
   font-weight: bold;
+}
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 h4 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 1200px) {
+  h4 {
+    font-size: 2rem;
+  }
+}
 h5 {
   font-size: 2rem;
+}
+@media (max-width: 1200px) {
+  h5 {
+    font-size: 1.5rem;
+  }
 }
 .Xlarge {
   font-size: 8rem;
   font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .Xlarge {
+    font-size: 6rem;
+  }
 }
 p {
   font-size: 1.6rem;
@@ -330,6 +355,11 @@ button {
   border-radius: 1rem;
   margin-top: 1rem;
 }
+@media (max-width: 1200px) {
+  .bar {
+    margin-bottom: 2rem;
+  }
+}
 .bar.eighty {
   width: 40%;
 }
@@ -343,4 +373,11 @@ button {
   color: #666666;
   width: 20%;
   font-style: italic;
+}
+@media (max-width: 1200px) {
+  .dates {
+    width: 50%;
+    border-bottom: 1px solid #666666;
+    margin-bottom: 1rem;
+  }
 }
