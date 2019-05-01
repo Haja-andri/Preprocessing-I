@@ -150,18 +150,33 @@ h1 {
   }
 }
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   line-height: 4rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 2.5rem;
+}
+.Xlarge {
+  font-size: 8rem;
+  font-weight: bold;
 }
 p {
   font-size: 1.6rem;
 }
-.container {
-  width: 80%;
+.container,
+.subContainer {
+  width: 70%;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #333;
-  min-height: 50%;
+}
+.subContainer {
+  width: 80%;
 }
 .menuList,
 .topBar {
@@ -222,7 +237,8 @@ button {
 .leftBox,
 .skills,
 .sectionTitle,
-.skillsDetails {
+.skillsDetails,
+.row {
   display: flex;
 }
 @media (max-width: 1200px) {
@@ -231,17 +247,23 @@ button {
   .leftBox,
   .skills,
   .sectionTitle,
-  .skillsDetails {
+  .skillsDetails,
+  .row {
     flex-direction: column;
     width: 100%;
   }
 }
+.row {
+  margin-top: 3rem;
+  justify-content: space-around;
+}
 .skills {
   background-color: antiquewhite;
+  border-bottom: 1px solid #333;
 }
 .rightBox,
 .leftBox {
-  height: 80vh;
+  height: 60vh;
   width: 50%;
   justify-content: center;
   align-items: center;
@@ -263,6 +285,7 @@ button {
   bottom: 10px solid red;
   background-image: url(../img/Profile.png);
   background-size: cover;
+  border-radius: 2rem;
 }
 .sectionTitle {
   width: 40%;
@@ -281,9 +304,10 @@ button {
 }
 .skillsDetails {
   width: 60%;
+  flex-direction: column;
   justify-content: flex-start;
   color: #333;
-  padding-top: 2rem;
+  padding: 2rem 2rem;
   background-color: antiquewhite;
 }
 @media (max-width: 1200px) {
@@ -293,4 +317,20 @@ button {
   }
 }
 @media (max-width: 750px) {
+}
+.bar {
+  height: 1rem;
+  min-height: 1rem;
+  background-color: aqua;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.bar.eighty {
+  width: 40%;
+}
+.bar.ninetyFive {
+  width: 95%;
+}
+.bar.seventyThree {
+  width: 73%;
 }
