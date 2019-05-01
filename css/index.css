@@ -156,7 +156,7 @@ h2 {
 }
 @media (max-width: 1200px) {
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 h3 {
@@ -257,7 +257,7 @@ button {
 }
 @media (max-width: 1200px) {
   button {
-    margin: 2em;
+    display: none;
   }
 }
 .intro,
@@ -291,6 +291,10 @@ button {
   background-color: antiquewhite;
   border-bottom: 1px solid #333;
 }
+.history {
+  background-color: lightcoral;
+  border-bottom: 1px solid #333;
+}
 .rightBox,
 .leftBox {
   height: 60vh;
@@ -322,7 +326,6 @@ button {
   justify-content: center;
   color: #333;
   padding-top: 2rem;
-  background-color: antiquewhite;
 }
 @media (max-width: 1200px) {
   .sectionTitle {
@@ -338,7 +341,6 @@ button {
   justify-content: flex-start;
   color: #333;
   padding: 2rem 2rem;
-  background-color: antiquewhite;
 }
 @media (max-width: 1200px) {
   .skillsDetails {
@@ -351,7 +353,7 @@ button {
 .bar {
   height: 1rem;
   min-height: 1rem;
-  background-color: aqua;
+  background-color: lightcoral;
   border-radius: 1rem;
   margin-top: 1rem;
 }
@@ -370,14 +372,13 @@ button {
   width: 73%;
 }
 .dates {
-  color: #666666;
-  width: 20%;
+  color: #322b2b;
+  width: 30%;
   font-style: italic;
 }
 @media (max-width: 1200px) {
   .dates {
     width: 50%;
-    border-bottom: 1px solid #666666;
     margin-bottom: 1rem;
   }
 }
