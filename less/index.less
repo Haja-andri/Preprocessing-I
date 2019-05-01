@@ -120,15 +120,15 @@ p{
 	font-size: 1.6rem;
 }
 
-.container, .subContainer{
+.container{
 	width: 70%;
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color:#333;
-}
 
-.subContainer{
-	width: 80%;
+	@media(max-width: @tabletBreakpoint) {
+		width: 90%;
+	  }	
 }
 
 .menuList, .topBar{
@@ -197,6 +197,9 @@ button{
 .row{
 	margin-top: 3rem;
 	justify-content: space-around;
+	@media(max-width: @tabletBreakpoint) {
+		margin-top: 1rem;
+	  }		
 }
 
 .skills{
@@ -262,6 +265,7 @@ button{
 	@media(max-width: @tabletBreakpoint) {
 		width: 100%;
 		padding: 2rem;
+		padding-left: 1rem;
 	  }	
 
 	@media(max-width: @mobileBreakpoint) {
